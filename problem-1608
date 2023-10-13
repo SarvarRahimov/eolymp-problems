@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+	long long n,a,s=0,b;
+int main()
+{
+	cin>>n;
+	b=n;
+	while(n>0){
+		a=n%10;
+		s=s*10+a;
+		n=n/10;
+	}
+	if(b==s){
+		cout<<"Yes";
+	}
+	else{
+		cout<<"No";
+	}
+	
+	return 0;
+}
